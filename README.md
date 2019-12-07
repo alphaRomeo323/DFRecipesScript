@@ -8,7 +8,7 @@ MinecraftMod "HMGDollsFrontLine"'s recipe scripts for CraftTweaker 2
 ## 導入方法
 "DollsFrontLine" "CraftTweaker" "JustEnoughItems"と、zsファイルごとに必要なModを導入し、いったんMinecraftを起動してください。<br>
 Releaseタブにあるzipをダウンロードし、中に入っているzsファイルを、Minecraftのディレクトリ内に生成される`scripts`フォルダに入れてください。導入するzsファイルはすべてでなくても動作するよう設計されています。<br>
-マイクラを再起動するか、ゲーム内で`/reload`を使用することで更新することができます。<br>
+マイクラを再起動するか、ゲーム内で`/reload`を使用することで更新することができます。レシピ更新後、JEIで導入確認用アイテムをレシピ検索し、「CraftTweaker3によるレシピ」が表示されていれば成功です。<br>
 Minecraftのバージョンはzipに以下のように記載されています
 
 ```
