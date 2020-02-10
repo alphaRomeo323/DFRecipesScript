@@ -10,12 +10,12 @@ MinecraftMod "HMGDollsFrontLine"'s recipe scripts for CraftTweaker 2
 GVCReversion2で追加されるアイテムをDollsFrontLineに合わせるためのScriptです。主にGVC側の弾薬・手榴弾レシピの削除、プラスチック装備の削除が行われます。<br>
 また、同時にDollsFrontLine・GVCReversion2のアイテムを鉱石辞書に登録します。<br>
 **導入確認アイテム|.50cal弾**(gvcr2:gvcr2_bullet_50calrf)<br>
-**前提導入Mod|**HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降 
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降 
 
 #### DFLGVC_AttachmentConverter.zs
 DollsFrontLineとGVCReversion2とで共通するアタッチメントを相互変換可能にします。<br>
 **導入確認アイテム|アタッチメント\_COYOTE**(hmggirlfront:dollam_coyote)<br>
-**前提導入Mod|**HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降<br>
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降
 
 ### 導入方法
 **CraftTweaker2 1.12.2-4.1.20以降と、JustEnoughItems**と、zsファイルごとに必要なModを導入し、いったんMinecraftを起動してください。<br>
