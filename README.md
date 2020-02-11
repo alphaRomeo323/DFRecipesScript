@@ -17,7 +17,7 @@ GVCReversion2のアイテムを鉱石辞書に登録します。レシピの追�
 **前提導入Mod**|GVCReversion2 1.12.2-α.1.4以降 
 
 #### DFLDict.zs
-DollsFrontLineのアイテムを鉱石辞書に登録します。レシピの追加はしません。
+DollsFrontLineのアイテムを鉱石辞書に登録します。レシピの追加はしません。<br>
 **前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降
 
 ### 同梱Script(その他/)
