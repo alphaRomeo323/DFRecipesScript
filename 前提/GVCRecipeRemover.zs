@@ -44,7 +44,6 @@ recipes.remove(alfa);
 recipes.addShaped(alfa, [[grenade, grenade, grenade], [<minecraft:string>, <minecraft:stick>, <minecraft:string>], [null, <minecraft:stick>, null]]);
 // ↑set grenade recipes
 recipes.remove(<gvcr2:gvcr2_block_mine>);
-recipes.remove(<gvcr2:gvcr2_item_bandage>);
 recipes.remove(<gvcr2:gvcr2_spawn_pmc_s>);
 recipes.remove(<gvcr2:gvcr2_armor_prahelmet>);
 recipes.remove(<gvcr2:gvcr2_armor_prachest>);

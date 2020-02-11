@@ -2,24 +2,45 @@
 MinecraftMod "HMGDollsFrontLine"'s recipe scripts for CraftTweaker 2
 
 ## Japanese Help
-このスクリプトは「CraftTweaker」を使って導入することで、<br>
-有名なModと、SCOPEMG36氏のMod「HMGDollsFrontLine」との連携を高められるScriptです。
+このスクリプトは「CraftTweaker」を使って導入することで、様々なModの難度調整と連携を実現するScriptです。
 
-### 同梱Script
+### 同梱Script(前提/)
+**このフォルダに入っているScriptは互いに競合するため必要なものを一つだけ入れてください。**
 #### GVCRecipeRemover.zs
 GVCReversion2で追加されるアイテムをDollsFrontLineに合わせるためのScriptです。主にGVC側の弾薬・手榴弾レシピの削除、プラスチック装備の削除が行われます。<br>
 また、同時にDollsFrontLine・GVCReversion2のアイテムを鉱石辞書に登録します。<br>
 **導入確認アイテム|.50cal弾**(gvcr2:gvcr2_bullet_50calrf)<br>
 **前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降 
 
+#### GVCDict.zs
+GVCReversion2のアイテムを鉱石辞書に登録します。レシピの追加はしません。<br>
+**前提導入Mod**|GVCReversion2 1.12.2-α.1.4以降 
+
+#### DFLDict.zs
+DollsFrontLineのアイテムを鉱石辞書に登録します。レシピの追加はしません。
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降
+
+### 同梱Script(その他/)
 #### DFLGVC_AttachmentConverter.zs
 DollsFrontLineとGVCReversion2とで共通するアタッチメントを相互変換可能にします。<br>
 **導入確認アイテム|アタッチメント\_COYOTE**(hmggirlfront:dollam_coyote)<br>
 **前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降 / GVCReversion2 1.12.2-α.1.4以降
 
+#### DFLIC2_Canmeal.zs
+DollsFrontLineの「アイテム\_配給」をIC2の缶詰から作成できるようになります。<br>
+**導入確認アイテム|アイテム\_配給**(hmggirlfront:idoll_food)<br>
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降 / IndustrialCraft 2.8.170-ex112以降
+
+#### IC2Harvest_Canner.zs
+IC2の缶詰装置で、HarvestCraftの食糧の一部を缶詰できるようになります。HarvestCraftはデフォルトでバニラアイテムの満腹度を変えてくるため、生成量判定は「使用材料の多さ」に依存しています。<br>
+おまけでHarvestCraftの材料アイテムからGVCReversion2のカロリーメイトを作成するレシピを追加していますが、デフォルトでは無効化されています。有効化する際はzsファイルの該当部分をコメントインしてください。<br>
+**導入確認アイテム|缶詰(中身入り)**(ic2:filled_tin_can)<br>
+**前提導入Mod**|IndustrialCraft 2.8.170-ex112以降 / IC2Tweaker 0.2.0以降Pam's HarvestCraft  1.12.2zf以降 (/ GVCReversion2 1.12.2-α.1.4以降)
+
 ### 導入方法
 **CraftTweaker2 1.12.2-4.1.20以降と、JustEnoughItems**と、zsファイルごとに必要なModを導入し、いったんMinecraftを起動してください。<br>
-Releaseタブにあるzipをダウンロードし、`scripts`フォルダに入っているzsファイルを、必要なもののみMinecraftのディレクトリ内に生成される`scripts`フォルダに入れてください。導入するzsファイルは特筆しない限りすべてでなくても動作するよう設計されています。<br>
+Releaseタブにあるzipをダウンロードし、各フォルダに入っているzsファイルを、必要なもののみMinecraftのディレクトリ内に生成される`scripts`フォルダに入れてください。<br>
+基本単体で入れても問題はありませんが、**`要前提`フォルダに入っているzsファイルは、`前提`フォルダにあるzsファイルのうち一つが必要です。**<br>
 マイクラを再起動する~~か、ゲーム内で`/reload`を使用する~~ことで更新することができます。レシピ更新後、JEIで導入確認用アイテムをレシピ検索し、「CraftTweaker3によるレシピ」が表示されていれば成功です。<br>
 **ゲーム内で`/reload`を使用してリロードすることができなくなりました。スクリプト導入後は必ず再起動してください。**
 
@@ -27,6 +48,8 @@ Releaseタブにあるzipをダウンロードし、`scripts`フォルダに入�
 スクリプトの改変及びコピーペースト、ファイルの再配布は自由です。
 
 ### 更新履歴
+**Ver1.12.2.4** "GVCDict.zs" "DFLDict.zs" "DFLIC2_Canmeal.zs" "IC2Harvest_Canner.zs" 公開
+
 **Ver1.12.2.3** CraftTweaker2 1.12.2-4.1.20 / HMGDollsFrontLine 1.12.2-β.10.0 / GVCReversion2 1.12.2-α.1.4に開発環境を移行(旧スクリプトは開発終了)<br>
 "GVCRecipeRemover.zs" "DFLGVC_AttachmentConverter.zs" 公開
 
