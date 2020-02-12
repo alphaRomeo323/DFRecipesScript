@@ -20,6 +20,13 @@ GVCReversion2のアイテムを鉱石辞書に登録します。レシピの追�
 DollsFrontLineのアイテムを鉱石辞書に登録します。レシピの追加はしません。<br>
 **前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.0以降
 
+### 同梱Script(要前提/)
+#### DFLTC6_MagicContract.zs
+DollsFrontLineで追加されるクラフト可能なスポーンエッグや各種契約を、ThaumCraft6の錬金術・注入によって作れるようレシピ変更します。<br>
+おまけでEmbers/Dracnic Evolution/Blood Magicのアイテムを用いたレシピを追加できますが、デフォルトでは無効化されています。有効化する際はzsファイルの該当部分をコメントインしてください。<br>
+**導入確認アイテム|快速製造契約**(hmggirlfront:idoll\_rapidcontract)<br>レシピ確認には別途"ThaumicJEI"が必要です。<br>
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.1以降 / Thaumcraft 1.12.2-6.1.BETA26以降 / ModTweaker 4.0.17以降
+
 ### 同梱Script(その他/)
 #### DFLGVC_AttachmentConverter.zs
 DollsFrontLineとGVCReversion2とで共通するアタッチメントを相互変換可能にします。<br>
@@ -37,6 +44,11 @@ IC2の缶詰装置で、HarvestCraftの食糧の一部を缶詰できるよう�
 **導入確認アイテム|缶詰(中身入り)**(ic2:filled_tin_can)<br>
 **前提導入Mod**|IndustrialCraft 2.8.170-ex112以降 / IC2Tweaker 0.2.0以降Pam's HarvestCraft  1.12.2zf以降 (/ GVCReversion2 1.12.2-α.1.4以降)
 
+#### DFLForge_Recipes.zs
+DollsFrontLineの「アイテム\_弾薬」「アイテム\_部品」のレシピを変更します。また、Modによって異なる「火薬」のレシピをRailcraftのものに統一します。<br>
+**導入確認アイテム|アイテム\_部品**(hmggirlfront:idoll_parts)<br>
+**前提導入Mod**|HMGDollsFrontLine 1.12.2-β.10.1以降の他、"真鍮・鉛・アルミニウム・鋼鉄・硝石・硫黄・石炭粉末"が追加されているMod環境が必要です。
+
 ### 導入方法
 **CraftTweaker2 1.12.2-4.1.20以降と、JustEnoughItems**と、zsファイルごとに必要なModを導入し、いったんMinecraftを起動してください。<br>
 Releaseタブにあるzipをダウンロードし、各フォルダに入っているzsファイルを、必要なもののみMinecraftのディレクトリ内に生成される`scripts`フォルダに入れてください。<br>
@@ -48,6 +60,8 @@ Releaseタブにあるzipをダウンロードし、各フォルダに入って�
 スクリプトの改変及びコピーペースト、ファイルの再配布は自由です。
 
 ### 更新履歴
+**Ver1.12.2.5** "DFLTC6_MagicContract.zs" "DFLForge_Recipes.zs" 公開
+
 **Ver1.12.2.4** "GVCDict.zs" "DFLDict.zs" "DFLIC2_Canmeal.zs" "IC2Harvest_Canner.zs" 公開
 
 **Ver1.12.2.3** CraftTweaker2 1.12.2-4.1.20 / HMGDollsFrontLine 1.12.2-β.10.0 / GVCReversion2 1.12.2-α.1.4に開発環境を移行(旧スクリプトは開発終了)<br>
