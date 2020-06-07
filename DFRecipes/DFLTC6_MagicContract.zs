@@ -1,4 +1,4 @@
-val scrap = <ore:scrap>;
+val scrap = <ore:partsGVC>;
 val iron = <ore:ingotIron>;
 val paper = <ore:paper>;
 val contract = <hmggirlfront:idoll_doll_contract>;

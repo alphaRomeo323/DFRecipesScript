@@ -1,0 +1,17 @@
+<ore:partsGVC>.add(<gvcr2:gvcr2_item_scrap>);
+<ore:bandageGVC>.add(<gvcr2:gvcr2_item_bandage>);
+<ore:grenadeGVC>.add(<gvcr2:gvcr2_grenade_frag>, <gvcr2:gvcr2_grenade_impact>);
+<ore:grenadeFlameGVC>.add(<gvcr2:gvcr2_grenade_flame>);
+<ore:grenadeSmokeGVC>.add(<gvcr2:gvcr2_grenade_smoke>);
+<ore:grenadeATGVC>.add(<gvcr2:gvcr2_grenade_atgrenade>);
+<ore:bullet9mmGVC>.add(<gvcr2:gvcr2_bullet_9mmhg>);
+<ore:bullet45acpGVC>.add(<gvcr2:gvcr2_bullet_45calhg>);
+<ore:bullet5.56mmGVC>.add(<gvcr2:gvcr2_bullet_22calar>);
+<ore:bullet7.62mmGVC>.add(<gvcr2:gvcr2_bullet_30calrf>);
+<ore:bullet12.7mmGVC>.add(<gvcr2:gvcr2_bullet_50calrf>);
+<ore:bullet12gShotgunGVC>.add(<gvcr2:gvcr2_bullet_12gasg>);
+<ore:bullet40mmGrenadeGVC>.add(<gvcr2:gvcr2_bullet_40mmgl>);
+<ore:attachmentSightGVC>.add(<gvcr2:gvcr2_am_horo>, <gvcr2:gvcr2_am_compm4>, <gvcr2:gvcr2_am_acog>, <gvcr2:gvcr2_am_scope>, <gvcr2:gvcr2_am_micro>, <gvcr2:gvcr2_am_coyote>, <gvcr2:gvcr2_am_kobra>, <gvcr2:gvcr2_am_m145>, <gvcr2:gvcr2_am_dotsight>);
+<ore:attachmentLightGVC>.add(<gvcr2:gvcr2_am_lasersight>, <gvcr2:gvcr2_am_flashlight>);
+<ore:attachmentMuzzleGVC>.add(<gvcr2:gvcr2_am_suppressor>);
+<ore:attachmentUnderBurrelGVC>.add(<gvcr2:gvcr2_am_grip>, <gvcr2:gvcr2_am_anglegrip>, <gvcr2:gvcr2_am_bipod>, <gvcr2:gvcr2_am_gripod>);

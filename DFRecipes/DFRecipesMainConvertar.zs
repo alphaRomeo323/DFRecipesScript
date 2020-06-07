@@ -1,16 +1,11 @@
-val grenade = <ore:grenade>;
-val scrap = <ore:scrap>;
+val grenade = <ore:grenadeGVC>;
+val scrap = <ore:partsGVC>;
 val bullet = <hmggirlfront:idoll_bullet>;
 val powder = <minecraft:gunpowder>;
 val tnt = <minecraft:tnt>;
 var alfa = <minecraft:stone>;
 var bravo = <minecraft:stone>;
 // ↑set constant and variable
-grenade.add(<gvcr2:gvcr2_grenade_frag>);
-grenade.add(<hmggirlfront:idoll_grenade_n>);
-scrap.add(<hmggirlfront:idoll_parts>);
-scrap.add(<gvcr2:gvcr2_item_scrap>);
-// ↑set ore dictionary
 alfa = <hmggirlfront:idoll_bullet_40>;
 recipes.remove(<gvcr2:gvcr2_block_bulletcrafter_1>);
 recipes.remove(alfa);
@@ -26,33 +21,41 @@ recipes.addShaped(<gvcr2:gvcr2_bullet_84mmrl>*2, [[null, bullet, null], [null, t
 recipes.addShaped(<gvcr2:gvcr2_bullet_76mmml>*2, [[null, tnt, null], [null, bullet, null], [scrap, powder, scrap]]);
 // ↑set bullet recipes
 recipes.remove(<gvcr2:gvcr2_grenade_frag>);
+recipes.remove(<hmggirlfront:idoll_grenade_f>);
 recipes.remove(<gvcr2:gvcr2_grenade_flame>);
+recipes.addShapeless(<hmggirlfront:idoll_grenade_f>, [grenade, <minecraft:torch>]);
+recipes.remove(<hmggirlfront:idoll_grenade_s>);
 recipes.remove(<gvcr2:gvcr2_grenade_smoke>);
+recipes.addShapeless(<hmggirlfront:idoll_grenade_s>, [grenade, <minecraft:coal:*>]);
+recipes.remove(<hmggirlfront:idoll_grenade_fb>);
+recipes.addShapeless(<hmggirlfront:idoll_grenade_fb>, [grenade, <minecraft:glowstone_dust>]);
 recipes.remove(<gvcr2:gvcr2_grenade_impact>);
-alfa = <hmggirlfront:idoll_grenade_f>;
-recipes.remove(alfa);
-recipes.addShaped(alfa, [[grenade, <minecraft:torch>], [null, null]]);
-alfa = <hmggirlfront:idoll_grenade_s>;
-recipes.remove(alfa);
-recipes.addShaped(alfa, [[grenade, <minecraft:coal:*>], [null, null]]);
-alfa = <hmggirlfront:idoll_grenade_fb>;
-recipes.remove(alfa);
-recipes.addShaped(alfa, [[grenade, <minecraft:glowstone_dust>], [null, null]]);
-recipes.addShaped(<gvcr2:gvcr2_grenade_impact>, [[alfa, scrap], [null, null]]);
-alfa = <gvcr2:gvcr2_grenade_atgrenade>;
-recipes.remove(alfa);
-recipes.addShaped(alfa, [[grenade, grenade, grenade], [<minecraft:string>, <minecraft:stick>, <minecraft:string>], [null, <minecraft:stick>, null]]);
-// ↑set grenade recipes
+recipes.addShapeless(<gvcr2:gvcr2_grenade_impact>, [alfa, scrap]);
+recipes.remove(<gvcr2:gvcr2_grenade_atgrenade>);
+recipes.addShaped(<gvcr2:gvcr2_grenade_atgrenade>, [[grenade, grenade, grenade], [<minecraft:string>, <minecraft:stick>, <minecraft:string>], [null, <minecraft:stick>, null]]);
 recipes.remove(<gvcr2:gvcr2_block_mine>);
+recipes.addShaped(<gvcr2:gvcr2_block_mine>, [[scrap, null, null], [grenade, null, null], [<minecraft:cobblestone>, null, null]]);
+alfa = <hmggirlfront:idoll_grenade_n>;
+recipes.addShapeless(alfa, [<ore:grenadeFlameGVC>]);
+recipes.addShapeless(alfa, [<ore:grenadeSmokeGVC>]);
+recipes.addShapeless(alfa, [<ore:grenadeFlashGVC>]);
+recipes.addShapeless(alfa*3, [<ore:grenadeATGVC>]);
+recipes.addShapeless(alfa*2,[<gvcr2:gvcr2_block_ied>, <hmggirlfront:idoll_doll_dismantling>.reuse()]);
+recipes.addShapeless(alfa, [<gvcr2:gvcr2_block_mine>, <hmggirlfront:idoll_doll_dismantling>.reuse()]);
+recipes.addShapeless(alfa*3, [<gvcr2:gvcr2_block_atmine>, <hmggirlfront:idoll_doll_dismantling>.reuse()]);
+// ↑set grenade recipes
 recipes.remove(<gvcr2:gvcr2_spawn_pmc_s>);
 recipes.remove(<gvcr2:gvcr2_armor_prahelmet>);
 recipes.remove(<gvcr2:gvcr2_armor_prachest>);
 recipes.remove(<gvcr2:gvcr2_armor_praleggings>);
 recipes.remove(<gvcr2:gvcr2_armor_praboots>);
+// ↑set plastic recipes
 alfa = <gvcr2:gvcr2_item_scrap>;
 bravo = <hmggirlfront:idoll_parts>;
 recipes.addShapeless(alfa,[bravo]);
 recipes.addShapeless(bravo,[alfa]);
-recipes.addShapeless(<hmggirlfront:idoll_grenade_n>*3,[<gvcr2:gvcr2_block_ied>, <hmggirlfront:idoll_doll_dismantling>.reuse()]);
-recipes.addShaped(<gvcr2:gvcr2_block_mine>, [[scrap, null, null], [grenade, null, null], [<minecraft:cobblestone>, null, null]]);
-// ↑set item recipes
+recipes.remove(<gvcr2:gvcr2_item_squad_cn>);
+recipes.addShapeless(<hmggirlfront:idoll_squad_cn>, [<gvcr2:gvcr2_item_squad_cn>]);
+recipes.addShapeless(<gvcr2:gvcr2_item_pad>, [<hmggirlfront:idoll_pad>]);
+recipes.addShapeless(<hmggirlfront:idoll_pad>, [<gvcr2:gvcr2_item_pad>]);
+// ↑set converting recipes
