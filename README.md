@@ -89,7 +89,7 @@ Releaseタブにあるzipをダウンロードし、各フォルダに入って�
 ### 更新履歴
 
 **Ver1.12.2.7** "GVCIC2_Recipes.zs" "GVCImE_Recipes.zsを公開"  
-"DFLForge_Recipes.zs"の弾薬代替レシピを「鉄+アルミブラス」から「銅+鉄」に変更
+"DFLForge_Recipes.zs"の弾薬代替レシピを「鉄+アルミブラス」から「銅+鉄」に変更  
 "DFLIC2_Recipes.zs"にアイテム追加・前提Mod変更
 
 **Ver1.12.2.6** "GVCRecipeRemover.zs"を"DFRecipeMainConvertor.zs"へ変更し、"DFLDict.zs" "GVCDict.zs"との競合関係を解消  
