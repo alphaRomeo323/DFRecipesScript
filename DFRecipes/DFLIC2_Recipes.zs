@@ -1,0 +1,13 @@
+import mods.ic2.Compressor;
+val food = <hmggirlfront:idoll_food>;
+val bullet = <hmggirlfront:idoll_bullet>;
+val can = <ic2:filled_tin_can>;
+recipes.remove(food);
+recipes.addShaped(food*2, [[null, null, null], [<minecraft:stick>, <minecraft:bread>, <minecraft:stick>], [null, null, null]]);
+recipes.addShapeless(food,[can]);
+Compressor.addRecipe(bullet, <ore:bullet9mmGVC>*16);
+Compressor.addRecipe(bullet, <ore:bullet45acpGVC>*12);
+Compressor.addRecipe(bullet, <ore:bullet5.56mmGVC>*8);
+Compressor.addRecipe(bullet, <ore:bullet7.62mmGVC>*6);
+Compressor.addRecipe(bullet, <ore:bullet12.7mmGVC>*4);
+Compressor.addRecipe(bullet, <ore:bullet12gShotGVC>*4);

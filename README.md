@@ -30,7 +30,7 @@ GVCReversion2で追加されるアイテムをDollsFrontLineに合わせるた�
 #### DFLForge_Recipes.zs
 DollsFrontLineの「アイテム\_弾薬」「アイテム\_部品」のレシピを変更します。また、Modによって異なる「火薬」のレシピをRailcraftのものに統一します。  
 **導入確認アイテム|アイテム\_部品**(hmggirlfront:idoll_parts)  
-**前提として、"真鍮・鉛・アルミニウム・鋼鉄・硝石・硫黄・石炭粉末"が追加されているMod環境が必要です。**
+**前提として、"真鍮・鉛・アルミニウム・鋼鉄・硝石・硫黄・石炭粉末"が追加されているMod環境が必要です。**(例としてImmersiveEngenieeringとThaumcraft6)
 
 #### DFLTC6_MagicContract.zs
 DollsFrontLineで追加されるクラフト可能なスポーンエッグや各種契約を、ThaumCraft6の錬金術・注入によって作れるようレシピ変更します。  
@@ -46,9 +46,25 @@ DollsFrontLineとGVCReversion2とで共通するアタッチメントを相互�
 **前提導入Mod**|GVCReversion2 1.12.2-α.1.4以降
 
 #### DFLIC2_Canmeal.zs
-DollsFrontLineの「アイテム\_配給」をIC2の缶詰から作成するレシピに変更します。  
+DollsFrontLineの「アイテム\_配給」をIC2の缶詰から作成するレシピに変更します。また、アイテム\_弾薬のみで製作できる弾薬を圧縮機で還元可能にします。  
 **導入確認アイテム|アイテム\_配給**(hmggirlfront:idoll_food)  
-**前提導入Mod**| IndustrialCraft 2.8.170-ex112以降
+**前提導入Mod**| HMGDollsFrontLine 1.12.2-β.14以降 / IndustrialCraft 2.8.170-ex112以降 / IC2Tweaker 0.2.0以降  
+**前提導入Script**| DFLDict.zs
+
+### 同梱Script(GVCRecipes/)
+**このフォルダに入っているScriptは、GVCReversion 1.12.2-α.2.2以降を前提とします(ただし、それ以降のバージョンを前提Mod欄に記入している場合を除く)**
+
+#### GVCIC2_Recipes.zs
+銃製造機をIC2のアイテムを使用したレシピに変更します。  
+**導入確認アイテム|銃製造機Tier1**(gvcr2:gvcr2_block_guncrafter_1)  
+**前提導入Mod**| IndustrialCraft 2.8.170-ex112以降 / IC2Tweaker 0.2.0以降  
+**前提導入Script**| GVCDict.zs
+
+#### GVCImE_Recipes.zs
+簡単な構造の銃である、MP40、M1911、M1891、PPSh-41、DP-28を作業台クラフトできるようになります。 上記GVCIC2_Recipes.zs導入時の救済措置の面が大きいです。   
+**導入確認アイテム|MP40**(gvcr2:gvcr2_gun_mp40)  
+**前提導入Mod**|ImmersiveEngineering 0.12.98以降  
+
 
 ### 同梱Script(Others/)
 おまけです
@@ -71,6 +87,11 @@ Releaseタブにあるzipをダウンロードし、各フォルダに入って�
 スクリプトの改変及びコピーペースト、ファイルの再配布は自由です。
 
 ### 更新履歴
+
+**Ver1.12.2.7** "GVCIC2_Recipes.zs" "GVCImE_Recipes.zsを公開"  
+"DFLForge_Recipes.zs"の弾薬代替レシピを「鉄+アルミブラス」から「銅+鉄」に変更
+"DFLIC2_Recipes.zs"にアイテム追加・前提Mod変更
+
 **Ver1.12.2.6** "GVCRecipeRemover.zs"を"DFRecipeMainConvertor.zs"へ変更し、"DFLDict.zs" "GVCDict.zs"との競合関係を解消  
 "DFRecipeMainConvertor.zs"にレシピ追加
 

@@ -15,7 +15,7 @@ recipes.addShapeless(<hmggirlfront:idoll_bullet_556>,[<gvcr2:gvcr2_bullet_22cala
 recipes.addShapeless(<hmggirlfront:idoll_bullet_12g>,[<gvcr2:gvcr2_bullet_12gasg>]);
 recipes.addShapeless(alfa,[<gvcr2:gvcr2_bullet_40mmgl>]);
 recipes.addShaped(alfa*2, [[null, grenade, null], [null, bullet, null], [null, null, null]]);
-recipes.addShaped(<gvcr2:gvcr2_bullet_50calrf>*16, [[bullet, null, null], [null, bullet, null], [null, null, bullet]]);
+recipes.addShaped(<gvcr2:gvcr2_bullet_50calrf>*12, [[bullet, null, null], [null, bullet, null], [null, null, bullet]]);
 recipes.addShaped(<gvcr2:gvcr2_bullet_76mmrl>*2, [[null, tnt, null], [null, bullet, null], [scrap, null, scrap]]);
 recipes.addShaped(<gvcr2:gvcr2_bullet_84mmrl>*2, [[null, bullet, null], [null, tnt, null], [null, scrap, null]]);
 recipes.addShaped(<gvcr2:gvcr2_bullet_76mmml>*2, [[null, tnt, null], [null, bullet, null], [scrap, powder, scrap]]);
