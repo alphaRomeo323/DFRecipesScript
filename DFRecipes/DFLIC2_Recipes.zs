@@ -3,7 +3,7 @@ val food = <hmggirlfront:idoll_food>;
 val bullet = <hmggirlfront:idoll_bullet>;
 val can = <ic2:filled_tin_can>;
 recipes.remove(food);
-recipes.addShaped(food*2, [[null, null, null], [<minecraft:stick>, <minecraft:bread>, <minecraft:stick>], [null, null, null]]);
+recipes.addShaped(food*4, [[null, null, null], [<minecraft:stick>, <minecraft:bread>, <minecraft:stick>], [null, null, null]]);
 recipes.addShapeless(food,[can]);
 Compressor.addRecipe(bullet, <ore:bullet9mmGVC>*16);
 Compressor.addRecipe(bullet, <ore:bullet45acpGVC>*12);
